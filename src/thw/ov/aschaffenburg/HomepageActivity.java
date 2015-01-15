@@ -1,4 +1,4 @@
-package thw.ov.germersheim;
+package thw.ov.aschaffenburg;
 
 import android.app.Activity;
 import android.content.Context;
@@ -38,7 +38,7 @@ public class HomepageActivity extends Activity {
 		mWebView.setWebChromeClient(new THWWebChromeClient());
 		mWebView.setWebViewClient(new THWWebViewClient());
 
-		mWebView.loadUrl("http://www.thw-germersheim.de");
+		mWebView.loadUrl("http://www.thw-ab.de");
 	}
 
 	private class THWWebChromeClient extends WebChromeClient {
@@ -56,7 +56,7 @@ public class HomepageActivity extends Activity {
 		public boolean shouldOverrideUrlLoading(WebView view, String url) {
 			if (!isOnline()) {
 				view.loadData(
-						"Sie haben momentan keinen Internetzugriff. <br/>Bitte sp&auml;ter erneut versuchen!<br/><br/><a href=\"http://www.thw-germersheim.de\">Neu laden...</a>",
+						"Sie haben momentan keinen Internetzugriff. <br/>Bitte sp&auml;ter erneut versuchen!<br/><br/><a href=\"http://www.thw-ab.de\">Neu laden...</a>",
 						"text/html", "UTF-8");
 			} else {
 				view.loadUrl(url);

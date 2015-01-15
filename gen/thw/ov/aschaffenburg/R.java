@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package thw.ov.germersheim;
+package thw.ov.aschaffenburg;
 
 public final class R {
     public static final class attr {
